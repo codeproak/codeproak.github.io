@@ -1,0 +1,330 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#loadscreen{
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(12, 12, 12);
+}
+
+#loadscreen img{
+    height: 100px;
+    animation-name: rotateloadimg;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes rotateloadimg {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#header{
+    width: 100%;
+    background: url(hbg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#overlay{
+    background: rgba(0, 0, 0, 0.644);
+    height: 100%;
+    width: 100%;
+}
+
+
+#nav{
+    transition: 0.2s;
+}
+
+#navlogo{
+    display:inline-block;
+}
+
+#navlogoimg{
+    margin: 10px 0px;
+    height: 80px;
+}
+
+#navlinks{
+    display: flex;
+    align-items: center;
+    float: right;
+    margin: 15px;
+}
+
+#navlinks a{
+    color: white;
+    padding: 0px 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#navlinks a button{
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10%;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+}
+
+
+#menutoggle{
+    float: right;
+    margin: 20px;
+}
+
+#navshowmenu{
+    height: 50px;
+    display: none;
+}
+
+#navhidemenu{
+    display: none;
+    height: 50px;
+}
+
+#headeroverlaycontent{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding: 15% 0% 10% 0%;
+}
+
+#headeroverlaycontentscrolldown{
+    color: white;
+    text-decoration: none;
+}
+
+#aboutmesec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px;
+    padding: 20px;
+}
+
+#aboutmesecskills{
+    width: 100%;
+    margin: 20px 0px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px gainsboro;
+    background: rgb(241, 241, 241);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#aboutmesecskills img{
+    height: 150px;
+    
+}
+
+#hireme{
+    background: url(wbg.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hiremeoverlay{
+    background: rgba(0, 0, 0, 0.876);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#hire{
+    font-size: 20px;
+    width: 200px;
+    padding: 10px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+}
+
+#hiremeoverlay button{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#hiremeoverlay button:hover{
+    box-shadow: inset 100px 120px 100px white;
+    color: black;
+}
+
+#planprice{
+    padding: 20px 0px;
+    color: black;
+    background: white;
+    border-radius: 20px;
+}
+#plans{
+    margin: 50px 0px;
+    padding: 10px;
+}
+
+.plan{
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    text-align: center;
+    background: white;
+    color: black;
+    padding: 50px 200px;
+    margin:20px 20px;
+}
+
+.plan button{
+    padding: 10px;
+    color: black;
+    width: 100%;
+    font-weight: bold;
+    border: 1px solid black;
+    transition: 0.2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1000px) and (min-width:0px){
+    #navshowmenu{
+        display: block;
+    }
+    #navhidemenu{
+        height: 20px;
+    }
+    #nav{
+        background: rgba(0, 0, 0, 0.897);
+    }
+    #navlogoimg{
+        height: 40px;
+    }
+    #navshowmenu{
+        margin: 0px 0px;
+        height: 20px;
+    }
+    #headeroverlaycontent{
+        font-size: 20px;
+    }
+    #headeroverlaycontent a img{
+        height: 20px;
+    }
+    #navlinks{
+        margin:0px;
+        position: fixed;
+        width: 100%;
+        padding: 1px 0px ;
+        height: 100%;
+        text-align: center;
+        float: none;
+        display: none;
+    }
+    #navlinks a{
+        background:  rgba(0, 0, 0, 0.897);
+        padding: 20px 0px;
+        font-size: 20px;
+        display: block;
+    }
+    #aboutmesec{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0px;
+        padding: 20px;
+    }
+    #aboutmesec img{
+        height: 200px;
+        float:none;
+        display: block;
+    }
+    .plan{
+    padding: 50px 100px;
+    }
+} 
+
+@media (max-width:500px) and (min-width:0px){
+
+    #headeroverlaycontent{
+        padding: 150px 20px 100px 20px;
+    }
+    #headeroverlaycontent a img{
+        height: 20px;
+    } 
+    #aboutmesec h1{
+        font-size: 15px;
+    }
+    #aboutmesec p{
+        font-size: 10px;
+    }
+    #aboutmesec img{
+        height: 100px;
+        float:none;
+        display: block;
+    }
+    #hiremeoverlay h1 strong{
+        font-size: 20px;
+    }    .plan p{
+        font-size: 5px;
+    }
+    #hiremeoverlay p{
+        font-size: 10px;
+        padding-bottom: 10px;
+    }
+    #hire{
+        font-size: 15px;
+        padding: 5px;
+        width: 100px;
+    }
+    #aboutmesecskills{
+        font-size: 10px;
+    }
+
+    #aboutmesecskills img{
+        height:60px;
+    }
+    .plan{
+        padding: 10px;
+    }
+        .plan p{
+        font-size: 1px;
+    }
+}

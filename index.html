@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hi , I am Akshat and I am a Front End Developer">
+    
+
+    <title>AKSHAT</title>
+
+    
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/ios-filled/1000/null/handwritten-ocr.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+
+    <script src="index.js"></script>
+</head>
+<body onload="hideload()">
+
+    <style>
+        .sticky {
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.945);
+    box-shadow: 0px 0px 50px rgb(71, 71, 71);
+    width: 100%;
+  }
+  
+    </style>
+
+
+    <div id="loadscreen">
+        <img src="logo.png">
+    </div>
+ 
+
+    <div id="header">
+        
+        <div id="overlay">
+          
+            <div id="nav">
+          
+                <div id="navlogo">
+          
+                    <img src="logo.png" id="navlogoimg">
+          
+                </div>
+  
+                <div id="menutoggle">
+                    <img src="showmenu.png" id="navshowmenu" onclick="showmenu()">
+                    <img src="hidemenu.png" id="navhidemenu" onclick="hidemenu()">
+                </div>
+            
+               <div id="navlinks">
+                    
+                    <a href="#aboutmesec">ABOUT ME</a>
+                    <a href="#aboutmesecskills">SKILLS</a>
+                    <a href="#hireme">HIRE ME</a>
+                    <a href="">CONTACT ME</a>
+                    <a href=""><button>Instagram</button></a>
+
+                </div>
+                
+            </div>
+        
+
+            <div id="headeroverlaycontent">
+                    <h1>HI , I AM AKSHAT</h1>
+                    <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Front End Developer</p>
+                    <br>
+                    <a href="#aboutmesec" id="headeroverlaycontentscrolldown"><img src="down.png" height="50px"></a>
+                </div>
+
+                <br><br><br><br><br><br>
+
+                <style>
+                    
+                    .sticky{
+                        background-color: rgba(0, 0, 0, 0.781);
+                    }
+                </style>
+
+                <script>
+                                    // When the user scrolls the page, execute myFunction
+                window.onscroll = function() {myFunction()};
+
+                // Get the header
+                var header = document.getElementById("nav");
+
+                // Get the offset position of the navbar
+                var sticky = header.offsetTop;
+
+                // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+                function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+                }
+                </script>
+            </div>
+    </div>
+    <div id="aboutmesec">
+        <h1 style="text-align: center;">A LITTLE BIT ABOUT ME</h1>
+        <br><br>
+            <img src="dev.jpg"  style="padding: 0px 30px;border-radius: 50%;">
+            <h1>AKSHAT</h1>
+            <p>Hi, I am Akshat Bisht and I consider myself a FULL STACK DEVELOPER. I know several technologies <br> like HTML , CSS , JS , PHP and MYSQL. I like to learn them. </p>
+            <br>
+            <p>I am a teenager living in Uttarakhand , India. I am currently studying in VIII class in an <br> Army Public School. I have also made a E-Library for my school. You can access it in <a href="#myworks" style="color: black;font-weight: bold;
+                text-decoration: none;">MY WORKS</a> section</p>
+
+                <p>I also have an INSTAGRAM Handle where I post. That's it . I post things which I like.</p>
+                <p><strong><a href="https://www.instagram.com/codeproak" style="font-size: 20px;color: black;padding: 20px 0px;text-decoration: none;">Instagram</a></strong></p>
+
+            </div>
+            <div id="aboutmesecskills">
+                <h1>Skills</h1>
+                <br><br>
+            <img src="https://img.icons8.com/ios-filled/10000/null/keyboard.png"/>
+            <h3>Typist</h3>
+            <p>I type 100 words per minute.</p>
+            <br><br>
+            <img src="https://img.icons8.com/ios-filled/10000/000000/designer.png"/>
+            <h3>Creative</h3>
+            <p>I create nice and beautiful front ends.</p>
+            </div>
+    
+
+            <div id="hireme">
+                <div id="hiremeoverlay">
+
+                    <h1><strong>WANT TO HIRE ME ?</strong></h1>
+                    <p>Hire me to make a website for you or your business.</p>
+                    <button id="hire">Hire</button>
+<br><br><br>
+
+                    <div id="planprice">
+                    <h1 style="flex-flow: column;">PLANS AND PRICING</h1>
+                    <div id="plans">
+                        <div class="plan">
+                                <h1><strong>99 INR.</strong></h1>
+                                <p>Get your website <br> with source code.</p>
+                                <button>Select</button>
+
+                            </div>
+                        <div class="plan">
+                                <h1><strong>199 INR.</strong></h1>
+                                <p>Get your website hosted <br> with source code.</p>
+                                <button>Select</button>
+
+                        </div>
+                        <div class="plan">
+                            <h1><strong>299 INR.</strong></h1>
+                            <p>Get your website hosted with a <br> custom domain name with source code.</p>
+                            <button>Select</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+
+</body>
+</html>
