@@ -13,3 +13,9 @@ function hidemenu() {
     document.getElementById("navhidemenu").style.display="none";
     document.getElementById("navshowmenu").style.display="block";
 }
+
+function con() {
+    var name = prompt("Hey bro , what's your name");
+    prompt("Hey " + name + " , Any Message ?");
+    confirm("Thanks for visiting " + name);
+}
