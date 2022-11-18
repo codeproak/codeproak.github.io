@@ -16,6 +16,11 @@ function hidemenu() {
 
 function con() {
     var name = prompt("Hey bro , what's your name");
-    prompt("Hey " + name + " , Any Message ?");
-    confirm("Thanks for visiting " + name);
+    if (name == "") {
+        alert("Please Enter your name");
+        var name = prompt("Hey bro , what's your name");
+    } else {
+        prompt("Hey " + name + " , Any Message ?");
+        confirm("Thanks for visiting " + name);
+    }
 }
